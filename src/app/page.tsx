@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 1200, offset: 200 });
-  }, []);
+  });
   return (
     // <div className='w-full bg-gradient-to-br from-indigo-50 from-10% via-orange-50 via-60% to-neutral-50 to-100%'>
     <div className='w-full '>
