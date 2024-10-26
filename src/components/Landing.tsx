@@ -5,22 +5,21 @@ export const Landing = () => {
   return (
     <section className='flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto md:py-16'>
       {/* Left Image */}
-      <div className='md:w-2/5 order-2 md:order-1 relative'>
+      <div className='md:w-2/5 order-2 md:order-1 relative' data-aos='fade-right'>
         <img
           src='https://picsum.photos/400/400?random=2'
           alt='VR User'
           className=' z-10 rounded-full md:absolute -top-48 -right-5'
           loading='eager'
-          data-aos='fade-right'
         />
-        <div className='relative'>
-          {/* <div className='absolute -inset-1 bg-green-50 rounded-full'></div> */}
-        </div>
+        {/* <div className='relative'> */}
+        {/* <div className='absolute -inset-1 bg-green-50 rounded-full'></div> */}
+        {/* </div> */}
       </div>
 
       {/* Right Content */}
       <div className='md:w-3/5 order-1 md:order-2 z-20 md:pt-10' data-aos='fade-left'>
-        <div className='flex items-center  '>
+        <div className='flex items-center  gap-1'>
           <div className='w-8 h-8 bg-black rounded-full flex items-center justify-center'>
             <div className='w-6 h-6 border-2 border-white rounded-full'></div>
           </div>

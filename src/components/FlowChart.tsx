@@ -2,7 +2,7 @@ import React from 'react';
 
 export const FlowChart = () => {
   return (
-    <div className='flex justify-center items-start relative md:scale-100 scale-[40%] -my-12 md:py-16'>
+    <div className='flex justify-center items-start relative md:scale-75 lg:scale-100 scale-[38%]  md:py-16'>
       {/* Left Side Nodes */}
       <div className='relative flex flex-col items-end gap-8'>
         {/* Vertical Connecting Line for Left Nodes */}

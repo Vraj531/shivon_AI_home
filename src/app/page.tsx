@@ -11,11 +11,11 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init({ duration: 1200, offset: 200 });
-  });
+  }, []);
   return (
     // <div className='w-full bg-gradient-to-br from-indigo-50 from-10% via-orange-50 via-60% to-neutral-50 to-100%'>
     <div className='w-full '>
-      <div className=' md:px-28'>
+      <div className='px-6 md:px-28'>
         <Landing />
 
         <section className='pt-12 md:pt-28' data-aos='fade-down' data-aos-offset='205'>
@@ -27,8 +27,11 @@ export default function Home() {
           <FlowChart />
         </section>
 
-        <section className='flex flex-col md:flex-row justify-center pt-20' data-aos='fade-right'>
-          <div className='md:w-1/2 md:text-right items-center h-full mt-36 px-12 pb-6 md:pb-0'>
+        <section
+          className='flex flex-col md:flex-row justify-center lg:pt-20'
+          data-aos='fade-right'
+        >
+          <div className='md:w-1/2 md:text-right items-center h-full md:mt-36 px-12 pb-6 md:pb-0'>
             <p className='text-3xl md:text-4xl font-light'>
               Why <span className='text-orange-500'>Choose</span>
             </p>
@@ -88,7 +91,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='p-4 lg:w-1/2 md:w-full' data-aos='fade-left'>
+              <div className='p-4 lg:w-1/2 md:w-full'>
                 <div className='flex  inset-x-0 top-0 bg-gradient-to-tr from-orange-600 from-10% to-slate-50 to-80% p-0.5 sm:flex-row flex-col rounded-lg rounded-br-none'>
                   <div className='flex-grow  bg-gradient-to-r from-slate-50 to-white rounded-lg rounded-r-none p-8 shadow-md'>
                     <h2 className='text-gray-900 text-xl md:text-3xl font-medium mb-3'>
@@ -106,7 +109,7 @@ export default function Home() {
         </section>
       </div>
       <div className='bg-gradient-to-t from-green-50 to-neutral-50 relative md:pb-24 flex flex-col gap-8'>
-        <section className='grid lg:grid-cols-2 grid-cols-1 items-center lg:px-12 px-8 md:py-20 md:pb-40 gap-4'>
+        <section className='grid lg:grid-cols-2 grid-cols-1 items-center lg:px-12 px-8 md:py-20 md:pb-40 gap-4 md:gap-0'>
           <img src='https://picsum.photos/700/400?random=1' alt='random' className='object-fill ' />
           <div className='max-w-md md:mx-auto'>
             <div className='space-y-2'>
@@ -199,8 +202,8 @@ export default function Home() {
           <img src='https://picsum.photos/700/400?random=2' alt='random' />
         </section>
         <section className='w-full lg:absolute lg:-bottom-24 place-self-end self-end'>
-          <div className='flex lg:w-[80%] items-center mx-auto justify-around bg-white rounded-xl pt-4'>
-            <div className='py-8 md:py-0'>
+          <div className='flex lg:w-[80%] items-center mx-auto justify-around bg-white rounded-xl '>
+            <div className='py-4 md:py-0 px-4'>
               <p className='text-xl lg:text-4xl font-bold'>Ready To Revolutionize</p>
               <p className='text-xl lg:text-4xl font-bold'>Your Recruitment Process?</p>
               <p className='flex gap-2 pt-8 font-bold text-orange-600 '>
