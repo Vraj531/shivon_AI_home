@@ -72,7 +72,7 @@ export const Header = () => {
             </li>
           </ul>
           <a className='link no-underline hover:underline font-semibold text-orange-500'>Login</a>
-          <div className='divider divider-horizontal py-4 before:h-[1.2px] after:h-[1.2px] before:bg-black after:bg-black' />
+          <div className='divider divider-horizontal md:py-4 before:h-[1.2px] after:h-[1.2px] before:bg-black after:bg-black' />
           <a className='link no-underline hover:underline font-semibold'>Signup</a>
         </div>
       </header>
