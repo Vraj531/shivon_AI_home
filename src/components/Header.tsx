@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <header className='navbar bg-base-100 bg-gradient-to-r from-indigo-50 to-neutral-50 lg:px-36 lg:py-4'>
+    <header className='navbar lg:px-36 lg:py-4'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -35,17 +35,6 @@ export const Header = () => {
             <li>
               <a>Features</a>
             </li>
-            {/* <li>
-              <a>Parent</a>
-              <ul className='p-2'>
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li> */}
           </ul>
         </div>
         <a className='btn btn-ghost text-xl'>SHIVON AI</a>
