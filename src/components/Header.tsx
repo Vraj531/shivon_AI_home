@@ -79,9 +79,12 @@ export const Header = () => {
           {/* <a className='link no-underline hover:underline font-semibold text-orange-500'>Login</a>
           <div className='divider divider-horizontal md:py-4 before:h-[1.2px] after:h-[1.2px] before:bg-black after:bg-black' />
           <a className='link no-underline hover:underline font-semibold'>Signup</a> */}
-          <a className='link no-underline hover:underline font-semibold text-orange-500'>
+          <Link
+            className='link no-underline hover:underline font-semibold text-orange-500'
+            href='https://forms.gle/MLhtvcPYF2xcjkff9'
+          >
             Request a demo
-          </a>
+          </Link>
         </div>
       </header>
       <div className='divider w-full px-12 md:mx-auto md:w-10/12 before:bg-black after:bg-black before:h-[1px] after:h-[1px] mt-0'></div>

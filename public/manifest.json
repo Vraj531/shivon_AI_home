@@ -2,7 +2,7 @@
   "name": "Shivon AI",
   "short_name": "Shivon AI",
   "theme_color": "#fc7754",
-  "background_color": "#ffffff",
+  "background_color": "#fff",
   "display": "browser",
   "scope": "/",
   "start_url": "/"

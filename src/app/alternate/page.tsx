@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const LandingPage = () => {
@@ -35,7 +36,10 @@ const LandingPage = () => {
             AI-powered candidate sourcing and search for recruiters. Simplify your hiring process
             with our automated solutions.
           </p>
-          <p className='flex gap-2 text-2xl items-center font-semibold'>
+          <Link
+            className='flex gap-2 text-2xl items-center font-semibold link hover:underline'
+            href='https://forms.gle/MLhtvcPYF2xcjkff9'
+          >
             <span>Get In Touch</span>
             <span>
               <svg
@@ -67,7 +71,7 @@ const LandingPage = () => {
                 </g>
               </svg>
             </span>
-          </p>
+          </Link>
         </div>
       </div>
     </div>

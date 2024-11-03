@@ -6,12 +6,13 @@ import 'aos/dist/aos.css';
 import { Landing } from '@/components/Landing';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   // const randomNumber = Math.floor(Math.random() * 1000);
 
   useEffect(() => {
-    Aos.init({ duration: 1200, offset: 200 });
+    Aos.init({ duration: 800, offset: 100 });
   });
   return (
     // <div className='w-full bg-gradient-to-br from-indigo-50 from-10% via-orange-50 via-60% to-neutral-50 to-100%'>
@@ -21,7 +22,6 @@ export default function Home() {
 
         <section className='pt-12 md:pt-28' data-aos='fade-down' data-aos-offset='205'>
           <div className='flex text-4xl text-center py-4 gap-4 justify-center'>
-            <Image src='/logo.png' alt='shivon ai' width={250} height={150} />
             <span className='font-light'> Candidate</span>
             <span className='text-orange-600'> Monitoring System</span>
           </div>
@@ -127,105 +127,99 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className='candidate-screening relative md:pb-24 flex flex-col gap-8'>
+      <div className='bg-gradient-to-r from-[#bddbd170] to-neutral-50 relative md:pb-24 flex flex-col gap-8'>
         <section className='grid lg:grid-cols-2 grid-cols-1 items-center lg:px-12 px-8 md:py-20 md:pb-40 gap-4 md:gap-0'>
           <img src='/chat1.png' alt='random' className='object-fill ' />
           <div className='max-w-md md:mx-auto'>
             <div className='space-y-2'>
               <p className='text-xl md:text-4xl font-medium'>
-                Lorem <span className='text-orange-500'>Ipsum Is Simply</span> Dummy Text
+                AI Powered <span className='text-orange-500'>Candidate Screening</span>
               </p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+                Our AI screens candidates with skill-focused questions, capturing responses and
+                recording video to provide recruiters with a clear view of each candidate&apos;s
+                abilities.
               </p>
-              <p className='flex gap-2 font-bold text-lg items-center'>
+              <Link
+                className='flex gap-2 font-bold text-lg items-center'
+                href='https://forms.gle/MLhtvcPYF2xcjkff9'
+              >
                 Get started
                 <span>
                   <svg
-                    fill='#cc6300'
-                    height='1.6rem'
-                    width='1.6rem'
-                    version='1.1'
-                    id='Layer_1'
                     xmlns='http://www.w3.org/2000/svg'
-                    xmlnsXlink='http://www.w3.org/1999/xlink'
-                    viewBox='-33 -33 396.00 396.00'
-                    xmlSpace='preserve'
+                    viewBox='0 0 100 24'
+                    height='1.6rem'
+                    width='3rem'
                     stroke='#cc6300'
-                    strokeWidth='0.0033'
+                    strokeWidth='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    fill='#cc6300'
                   >
-                    <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
-                    <g
-                      id='SVGRepo_tracerCarrier'
+                    <path
+                      d='M90 5L97 12M97 12L90 19M97 12H3'
+                      stroke='#cc6300'
+                      strokeWidth='3'
                       strokeLinecap='round'
                       strokeLinejoin='round'
-                      stroke='#CCCCCC'
-                      strokeWidth='1.98'
-                    ></g>
-                    <g id='SVGRepo_iconCarrier'>
-                      <path
-                        id='XMLID_27_'
-                        d='M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z'
-                      ></path>{' '}
-                    </g>
+                      fill='#cc6300'
+                    />
                   </svg>
                 </span>
-              </p>
+              </Link>
             </div>
           </div>
           <div className='lg:order-none order-last max-w-md md:mx-auto lg:self-auto'>
             <div className='space-y-2'>
               <p className='text-xl md:text-4xl font-medium'>
-                Lorem <span className='text-orange-500'>Ipsum Is Simply</span> Dummy Text
+                Comprehensive <br /> <span className='text-orange-500'>Candidate Profiles</span>
               </p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+                Our app offers candidate profiles with essential information, skill assessments, and
+                percentages, helping HR professionals make quick hiring decisions.
               </p>
-              <p className='flex gap-2 font-bold text-lg items-center'>
+              <Link
+                className='flex gap-2 font-bold text-lg items-center'
+                href='https://forms.gle/MLhtvcPYF2xcjkff9'
+              >
                 Get started
                 <span>
                   <svg
-                    fill='#cc6300'
-                    height='1.6rem'
-                    width='1.6rem'
-                    version='1.1'
-                    id='Layer_1'
                     xmlns='http://www.w3.org/2000/svg'
-                    xmlnsXlink='http://www.w3.org/1999/xlink'
-                    viewBox='-33 -33 396.00 396.00'
-                    xmlSpace='preserve'
+                    viewBox='0 0 100 24'
+                    height='1.6rem'
+                    width='3rem'
                     stroke='#cc6300'
-                    strokeWidth='0.0033'
+                    strokeWidth='3'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    fill='#cc6300'
                   >
-                    <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
-                    <g
-                      id='SVGRepo_tracerCarrier'
+                    <path
+                      d='M90 5L97 12M97 12L90 19M97 12H3'
+                      stroke='#cc6300'
+                      strokeWidth='3'
                       strokeLinecap='round'
                       strokeLinejoin='round'
-                      stroke='#CCCCCC'
-                      strokeWidth='1.98'
-                    ></g>
-                    <g id='SVGRepo_iconCarrier'>
-                      <path
-                        id='XMLID_27_'
-                        d='M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z'
-                      ></path>{' '}
-                    </g>
+                      fill='#cc6300'
+                    />
                   </svg>
                 </span>
-              </p>
+              </Link>
             </div>
           </div>
           <img src='/chat.png' alt='random' />
         </section>
         <section className='w-full lg:absolute lg:-bottom-24 place-self-end self-end'>
-          <div className='flex lg:w-[80%] items-center mx-auto justify-around bg-white rounded-xl '>
+          <div className='flex lg:w-[80%] items-center mx-auto justify-around bg-[#f6f5fa] rounded-xl '>
             <div className='py-4 md:py-0 px-4'>
               <p className='text-xl lg:text-4xl font-bold'>Ready To Revolutionize</p>
               <p className='text-xl lg:text-4xl font-bold'>Your Recruitment Process?</p>
-              <p className='flex gap-2 pt-8 font-bold text-orange-600 '>
+              <Link
+                className='flex gap-2 pt-8 font-bold text-orange-600 '
+                href="href='https://forms.gle/MLhtvcPYF2xcjkff9'"
+              >
                 Get started
                 <span>
                   <svg
@@ -249,15 +243,22 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-              </p>
+              </Link>
             </div>
             <img alt='agree' src='/agree2.png' className='md:h-56 h-28' data-aos='fade-top' />
           </div>
         </section>
       </div>
-      <div className='md:h-72 flex w-full'>
-        <section className='mt-auto flex flex-col justify-center w-full content-center place-content-center mx-auto py-10 gap-4'>
-          <p className='text-5xl font-bold text-center'>SHIVON AI</p>
+      <div className='md:h-80 flex w-full'>
+        <section className='mt-auto flex flex-col justify-center w-full content-center place-content-center mx-auto py-10 gap-8 relative'>
+          {/* <p className='text-5xl font-bold text-center'>SHIVON AI</p> */}
+          <Image
+            src='/logo.png'
+            alt='shivon ai'
+            className='place-self-center'
+            width={350}
+            height={150}
+          />
           <div className='flex self-center gap-4'>
             <img src='/icons8-instagram.svg' alt='facebook' className='max-w-6' />
             <img src='/icons8-facebook.svg' alt='facebook' className='max-w-6' />
@@ -266,7 +267,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className='divider py-0 my-0 lg:max-w-screen-md mx-auto'></div>
+      <div className='divider py-0 my-0 lg:max-w-screen-lg mx-auto'></div>
     </div>
   );
 }
@@ -302,8 +303,8 @@ const features = [
             y2='62'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#BDDBD1' />
-            <stop offset='1' stop-color='white' />
+            <stop stopColor='#BDDBD1' />
+            <stop offset='1' stopColor='white' />
           </linearGradient>
         </defs>
       </svg>
@@ -325,9 +326,9 @@ const features = [
         <path
           d='M47.4375 36.5C47.4375 34.7033 47.3704 32.9227 47.2362 31.1596C47.1331 29.7627 46.5314 28.4494 45.541 27.459C44.5506 26.4685 43.2373 25.8669 41.8404 25.7637C38.2852 25.4955 34.7148 25.4955 31.1596 25.7637C29.7627 25.8669 28.4494 26.4685 27.459 27.459C26.4686 28.4494 25.8669 29.7627 25.7638 31.1596C25.739 31.4804 25.7171 31.8027 25.6967 32.125M47.4375 36.5L51.8125 32.125M47.4375 36.5L43.0625 32.125M25.5625 36.5C25.5625 38.2966 25.6296 40.0773 25.7638 41.8404C25.8669 43.2373 26.4686 44.5506 27.459 45.541C28.4494 46.5314 29.7627 47.133 31.1596 47.2362C34.7148 47.5046 38.2852 47.5046 41.8404 47.2362C43.2373 47.133 44.5506 46.5314 45.541 45.541C46.5314 44.5506 47.1331 43.2373 47.2362 41.8404C47.261 41.5196 47.2829 41.1973 47.3033 40.875M25.5625 36.5L29.9375 40.875M25.5625 36.5L21.1875 40.875'
           stroke='black'
-          stroke-width='1.5'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='1.5'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <defs>
           <linearGradient
@@ -338,8 +339,8 @@ const features = [
             y2='62'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#BDDBD1' />
-            <stop offset='1' stop-color='white' />
+            <stop stopColor='#BDDBD1' />
+            <stop offset='1' stopColor='white' />
           </linearGradient>
         </defs>
       </svg>
@@ -375,71 +376,11 @@ const features = [
             y2='62'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#BDDBD1' />
-            <stop offset='1' stop-color='white' />
+            <stop stopColor='#BDDBD1' />
+            <stop offset='1' stopColor='white' />
           </linearGradient>
         </defs>
       </svg>
     ),
   },
 ];
-
-// const svgList = (feature: string) => {
-//   switch (feature) {
-//     case 'AI-Powered':
-//       return (
-//         <svg
-//           className=''
-//           width='35'
-//           height='35'
-//           viewBox='0 0 35 35'
-//           fill='none'
-//           xmlns='http://www.w3.org/2000/svg'
-//         >
-//           <path
-//             d='M22.9688 22.9688L19.339 19.339M19.339 19.339C19.796 18.8819 20.1585 18.3393 20.4059 17.7422C20.6532 17.145 20.7806 16.505 20.7806 15.8586C20.7806 15.2123 20.6532 14.5723 20.4059 13.9751C20.1585 13.378 19.796 12.8354 19.339 12.3783C18.8819 11.9213 18.3393 11.5587 17.7422 11.3114C17.145 11.064 16.505 10.9367 15.8586 10.9367C15.2123 10.9367 14.5723 11.064 13.9751 11.3114C13.378 11.5587 12.8354 11.9213 12.3783 12.3783C11.4551 13.3016 10.9364 14.5537 10.9364 15.8594C10.9364 17.165 11.4551 18.4172 12.3783 19.3404C13.3016 20.2636 14.5537 20.7823 15.8594 20.7823C17.165 20.7823 18.4172 20.2636 19.3404 19.3404L19.339 19.339ZM30.625 17.5C30.625 19.2236 30.2855 20.9303 29.6259 22.5227C28.9663 24.1151 27.9995 25.562 26.7808 26.7808C25.562 27.9995 24.1151 28.9663 22.5227 29.6259C20.9303 30.2855 19.2236 30.625 17.5 30.625C15.7764 30.625 14.0697 30.2855 12.4773 29.6259C10.8849 28.9663 9.43799 27.9995 8.21922 26.7808C7.00045 25.562 6.03367 24.1151 5.37408 22.5227C4.71449 20.9303 4.375 19.2236 4.375 17.5C4.375 14.019 5.75781 10.6806 8.21922 8.21922C10.6806 5.75781 14.019 4.375 17.5 4.375C20.981 4.375 24.3194 5.75781 26.7808 8.21922C29.2422 10.6806 30.625 14.019 30.625 17.5Z'
-//             stroke='black'
-//             strokeWidth='1.5'
-//             strokeLinecap='round'
-//             strokeLinejoin='round'
-//           />
-//         </svg>
-//       );
-//     case 'Automated':
-//       return (
-//         <svg
-//           width='33'
-//           height='25'
-//           viewBox='0 0 33 25'
-//           fill='none'
-//           xmlns='http://www.w3.org/2000/svg'
-//         >
-//           <path
-//             d='M27.4375 12.5C27.4375 10.7033 27.3704 8.92268 27.2362 7.15956C27.1331 5.76269 26.5314 4.44938 25.541 3.45896C24.5506 2.46853 23.2373 1.86691 21.8404 1.76372C18.2852 1.49551 14.7148 1.49551 11.1596 1.76372C9.76271 1.86691 8.44941 2.46853 7.45898 3.45896C6.46856 4.44938 5.86694 5.76269 5.76375 7.15956C5.73896 7.48039 5.71708 7.80268 5.69667 8.12497M27.4375 12.5L31.8125 8.12497M27.4375 12.5L23.0625 8.12497M5.5625 12.5C5.5625 14.2966 5.62958 16.0773 5.76375 17.8404C5.86694 19.2373 6.46856 20.5506 7.45898 21.541C8.44941 22.5314 9.76271 23.133 11.1596 23.2362C14.7148 23.5046 18.2852 23.5046 21.8404 23.2362C23.2373 23.133 24.5506 22.5314 25.541 21.541C26.5314 20.5506 27.1331 19.2373 27.2362 17.8404C27.261 17.5196 27.2829 17.1973 27.3033 16.875M5.5625 12.5L9.9375 16.875M5.5625 12.5L1.1875 16.875'
-//             stroke='black'
-//             strokeWidth='1.5'
-//             strokeLinecap='round'
-//             strokeLinejoin='round'
-//           />
-//         </svg>
-//       );
-//     case 'Data-Driven':
-//       return (
-//         <svg
-//           width='24'
-//           height='24'
-//           viewBox='0 0 24 24'
-//           fill='none'
-//           xmlns='http://www.w3.org/2000/svg'
-//         >
-//           <path
-//             d='M2.25 18L9 11.25L13.306 15.556C14.5509 13.1021 16.6045 11.1531 19.12 10.038L21.86 8.81799M21.86 8.81799L15.92 6.53699M21.86 8.81799L19.58 14.758'
-//             stroke='black'
-//             strokeWidth='1.5'
-//             strokeLinecap='round'
-//             strokeLinejoin='round'
-//           />
-//         </svg>
-//       );
-//   }
-// };

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export const Landing = () => {
@@ -7,7 +8,39 @@ export const Landing = () => {
     <section className='flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto md:py-16 relative w-full'>
       <div className='absolute inset-0  flex w-full justify-between'>
         <div className='absolute bg-[#674dfd11] -top-[24rem] -left-[24rem] rounded-full size-[1004px] filter blur-lg' />
-        <div className='absolute bg-[#f0451105]  w-[400px] h-[600px] -top-[11rem] left-[48rem] rounded-full filter blur-lg' />
+        <svg
+          className='-top-[11rem] lg:absolute hidden'
+          width='1425'
+          height='672'
+          viewBox='0 0 1425 672'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <g filter='url(#filter0_f_1_754)'>
+            <path
+              d='M1550 -535C1407.81 452.123 513.537 542 513.537 542C513.537 542 1132.81 456.435 414.292 -237.82L130 -535H1550Z'
+              fill='#F04511'
+              fillOpacity='0.05'
+            />
+          </g>
+          <defs>
+            <filter
+              id='filter0_f_1_754'
+              x='0'
+              y='-665'
+              width='1680'
+              height='1337'
+              filterUnits='userSpaceOnUse'
+              colorInterpolationFilters='sRGB'
+            >
+              <feFlood floodOpacity='0' result='BackgroundImageFix' />
+              <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
+              <feGaussianBlur stdDeviation='65' result='effect1_foregroundBlur_1_754' />
+            </filter>
+          </defs>
+        </svg>
+
+        {/* <div className='absolute bg-[#f0451105]  w-[400px] h-[600px] -top-[11rem] left-[48rem] rounded-full filter blur-lg' /> */}
         {/* <img alt='' src='/arc.png' className='size-10' /> */}
       </div>
       {/* Left Image */}
@@ -36,7 +69,10 @@ export const Landing = () => {
           AI-powered candidate sourcing and search for recruiters. Simplify your hiring process with
           our automated solutions.
         </p>
-        <p className='flex gap-2 text-xl items-center font-semibold'>
+        <Link
+          className='flex gap-2 text-xl items-center font-semibold link no-underline hover:underline'
+          href='https://forms.gle/MLhtvcPYF2xcjkff9'
+        >
           <span>Get In Touch</span>
           <span>
             <svg
@@ -88,7 +124,7 @@ export const Landing = () => {
               </g>
             </svg> */}
           </span>
-        </p>
+        </Link>
       </div>
     </section>
   );
