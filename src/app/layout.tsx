@@ -47,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className='font-montserrat'>
-      <body className={`antialiased flex flex-col min-h-screen custom-background`}>
+    <html lang='en' className='font-montserrat scroll-smooth'>
+      <body className={`antialiased flex flex-col min-h-screen `}>
         <Header />
         <main className='flex-1 flex flex-col'>{children}</main>
         <Footer />

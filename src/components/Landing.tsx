@@ -1,16 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import React from 'react';
 
 export const Landing = () => {
   return (
-    <section className='flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto md:py-16'>
+    <section className='flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto md:py-16 relative w-full'>
+      <div className='absolute inset-0  flex w-full justify-between'>
+        <div className='absolute bg-[#674dfd11] -top-[24rem] -left-[24rem] rounded-full size-[1004px] filter blur-lg' />
+        <div className='absolute bg-[#f0451105]  w-[400px] h-[600px] -top-[11rem] left-[48rem] rounded-full filter blur-lg' />
+        {/* <img alt='' src='/arc.png' className='size-10' /> */}
+      </div>
       {/* Left Image */}
-      <div className='md:w-2/5 order-2 md:order-1 relative' data-aos='fade-right'>
-        <img
-          src='https://picsum.photos/400/400?random=2'
+      <div className='md:w-1/2 order-2 md:order-1 relative' data-aos='fade-right'>
+        <Image
+          src='/landing.png'
           alt='VR User'
-          className=' z-10 rounded-full md:absolute -top-48 -right-5'
+          className=''
           loading='eager'
+          width={500}
+          height={300}
+          layout=''
         />
         {/* <div className='relative'> */}
         {/* <div className='absolute -inset-1 bg-green-50 rounded-full'></div> */}
@@ -18,16 +27,10 @@ export const Landing = () => {
       </div>
 
       {/* Right Content */}
-      <div className='md:w-3/5 order-1 md:order-2 z-20 md:pt-10' data-aos='fade-left'>
-        <div className='flex items-center  gap-1'>
-          <div className='w-8 h-8 bg-black rounded-full flex items-center justify-center'>
-            <div className='w-6 h-6 border-2 border-white rounded-full'></div>
-          </div>
-          <span className='text-3xl md:text-5xl font-semibold'>SHIVON AI</span>
-        </div>
-        <h1 className='text-3xl md:text-5xl mb-2'>
+      <div className='md:w-1/2 order-1 md:order-2 z-20 md:pt-10 ml-10' data-aos='fade-left'>
+        <h1 className='text-3xl md:text-7xl mb-2'>
           Revolutionizing
-          <span className='block text-orange-500 '>Recruitment</span>
+          <span className='block text-[#fc7754] '>Recruitment</span>
         </h1>
         <p className='text-gray-600 text-lg mb-4 max-w-lg'>
           AI-powered candidate sourcing and search for recruiters. Simplify your hiring process with

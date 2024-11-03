@@ -2,7 +2,7 @@ import React from 'react';
 
 export const FlowChart = () => {
   return (
-    <div className='flex justify-center items-start relative md:scale-75 lg:scale-100 scale-[38%]  md:py-16'>
+    <div className='flex justify-center font-medium items-start relative md:scale-75 lg:scale-100 scale-[38%]  md:py-16'>
       {/* Left Side Nodes */}
       <div className='relative flex flex-col items-end gap-8'>
         {/* Vertical Connecting Line for Left Nodes */}
@@ -65,35 +65,18 @@ export const FlowChart = () => {
         </div>
         {/* Horizontal Lines Connecting CMS to Left and Right */}
         <div className='absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full w-28 h-0.5 bg-orange-500 '></div>
-        <div className='absolute top-[46.5%] -left-5'>
+        <div className='absolute top-[47.2%] -left-[10px]'>
           <svg
-            fill='#f45d32'
-            height='20px'
-            width='20px'
-            version='1.1'
-            id='Layer_1'
+            width='10'
+            height='16'
+            viewBox='0 0 10 16'
+            fill='none'
             xmlns='http://www.w3.org/2000/svg'
-            xmlnsXlink='http://www.w3.org/1999/xlink'
-            viewBox='-13.2 -13.2 356.40 356.40'
-            xmlSpace='preserve'
-            stroke='#f45d32'
-            strokeWidth='9.24'
           >
-            <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
-            <g
-              id='SVGRepo_tracerCarrier'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              stroke='#CCCCCC'
-              strokeWidth='7.92'
-            ></g>
-            <g id='SVGRepo_iconCarrier'>
-              {' '}
-              <path
-                id='XMLID_27_'
-                d='M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z'
-              ></path>{' '}
-            </g>
+            <path
+              d='M9.707 8.70713C10.098 8.31661 10.098 7.68344 9.707 7.29292L3.343 0.928957C2.953 0.538432 2.319 0.538432 1.929 0.928957C1.538 1.31948 1.538 1.95265 1.929 2.34317L7.586 8.00003L1.929 13.6569C1.538 14.0474 1.538 14.6806 1.929 15.0711C2.319 15.4616 2.953 15.4616 3.343 15.0711L9.707 8.70713ZM0 9L9 9.00003L9 7.00003L0 7L0 9Z'
+              fill='#EF6823'
+            />
           </svg>
         </div>
         <div className='absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full w-28 h-0.5 bg-orange-500'></div>
@@ -114,38 +97,43 @@ export const FlowChart = () => {
 };
 
 const Node = ({ label, direction = 'right' }: { label: string; direction: string }) => {
-  return (
+  return label === 'Centralized Candidate Profile' ? (
+    <div className='flex items-center '>
+      <div className='flex items-center mb-[1px]'>
+        {direction === 'left' && <div className='w-20 h-0.5 bg-orange-500'></div>}
+        {direction === 'left' && (
+          <svg
+            width='10'
+            height='16'
+            viewBox='0 0 10 16'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M9.707 8.70713C10.098 8.31661 10.098 7.68344 9.707 7.29292L3.343 0.928957C2.953 0.538432 2.319 0.538432 1.929 0.928957C1.538 1.31948 1.538 1.95265 1.929 2.34317L7.586 8.00003L1.929 13.6569C1.538 14.0474 1.538 14.6806 1.929 15.0711C2.319 15.4616 2.953 15.4616 3.343 15.0711L9.707 8.70713ZM0 9L9 9.00003L9 7.00003L0 7L0 9Z'
+              fill='#EF6823'
+            />
+          </svg>
+        )}
+      </div>
+      <NodeBox label={label} />
+      {direction === 'right' && <div className='w-10 h-0.5 bg-orange-500'></div>}
+    </div>
+  ) : (
     <div className='flex items-center'>
       {direction === 'left' && <div className='w-20 h-0.5 bg-orange-500'></div>}
       {direction === 'left' && (
         <svg
-          fill='#f45d32'
-          height='20px'
-          width='20px'
-          version='1.1'
-          id='Layer_1'
+          width='10'
+          height='16'
+          viewBox='0 0 10 16'
+          fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          xmlnsXlink='http://www.w3.org/1999/xlink'
-          viewBox='-13.2 -13.2 356.40 356.40'
-          xmlSpace='preserve'
-          stroke='#f45d32'
-          strokeWidth='9.24'
         >
-          <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
-          <g
-            id='SVGRepo_tracerCarrier'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            stroke='#CCCCCC'
-            strokeWidth='7.92'
-          ></g>
-          <g id='SVGRepo_iconCarrier'>
-            {' '}
-            <path
-              id='XMLID_27_'
-              d='M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z'
-            ></path>{' '}
-          </g>
+          <path
+            d='M9.707 8.70713C10.098 8.31661 10.098 7.68344 9.707 7.29292L3.343 0.928957C2.953 0.538432 2.319 0.538432 1.929 0.928957C1.538 1.31948 1.538 1.95265 1.929 2.34317L7.586 8.00003L1.929 13.6569C1.538 14.0474 1.538 14.6806 1.929 15.0711C2.319 15.4616 2.953 15.4616 3.343 15.0711L9.707 8.70713ZM0 9L9 9.00003L9 7.00003L0 7L0 9Z'
+            fill='#EF6823'
+          />
         </svg>
       )}
       <NodeBox label={label} />
