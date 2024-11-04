@@ -12,6 +12,50 @@ body {
   @apply font-semibold;
 }
 
+.circle-right {
+  animation: moveRight 2.5s linear infinite,
+    /* fadeInOut 2.5s steps(1, end) infinite; */
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  80% {
+    /* transform: translateX(10px); */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+}
+
+.circle-rightl {
+  animation: moveRightL 2.5s linear infinite,
+    /* fadeInOut 2.5s steps(1, end) infinite; */
+}
+
+@keyframes moveRightL {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  80% {
+    /* transform: translateX(10px); */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+}
+
 .candidate-screening {
   background: linear-gradient(180deg,
       rgba(189, 219, 209, 0.4) 0%,
