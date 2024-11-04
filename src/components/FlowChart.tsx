@@ -100,7 +100,12 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
   return label === 'Centralized Candidate Profile' ? (
     <div className='flex items-center '>
       <div className='flex items-center mb-[1px]'>
-        {direction === 'left' && <div className='w-20 h-0.5 bg-orange-500'></div>}
+        {direction === 'left' && (
+          <>
+            <div className='w-20 h-0.5 bg-orange-500'></div>
+            <div className='absolute size-2 rounded-full left-10 bg-orange-500'></div>
+          </>
+        )}
         {direction === 'left' && (
           <svg
             width='10'
@@ -117,11 +122,21 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
         )}
       </div>
       <NodeBox label={label} />
-      {direction === 'right' && <div className='w-10 h-0.5 bg-orange-500'></div>}
+      {direction === 'right' && (
+        <>
+          <div className='absolute size-2 rounded-full  bg-orange-500'></div>
+          <div className='w-10 h-0.5 bg-orange-500'></div>
+        </>
+      )}
     </div>
   ) : (
     <div className='flex items-center'>
-      {direction === 'left' && <div className='w-20 h-0.5 bg-orange-500'></div>}
+      {direction === 'left' && (
+        <>
+          <div className='w-20 h-0.5 bg-orange-500'></div>
+          <div className='absolute size-2 rounded-full left-10 bg-orange-500'></div>
+        </>
+      )}
       {direction === 'left' && (
         <svg
           width='10'
@@ -137,7 +152,12 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
         </svg>
       )}
       <NodeBox label={label} />
-      {direction === 'right' && <div className='w-10 h-0.5 bg-orange-500'></div>}
+      {direction === 'right' && (
+        <>
+          <div className='w-10 h-0.5 bg-orange-500'></div>
+          <div className='absolute size-2 rounded-full right-4 bg-orange-500'></div>
+        </>
+      )}
     </div>
   );
 };

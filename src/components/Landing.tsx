@@ -40,7 +40,7 @@ export const Landing = () => {
           </defs>
         </svg>
 
-        {/* <div className='absolute bg-[#f0451105]  w-[400px] h-[600px] -top-[11rem] left-[48rem] rounded-full filter blur-lg' /> */}
+        <div className='absolute bg-[#f0451110]  w-[400px] h-[600px] -top-[11rem] left-[48rem] rounded-full filter blur-lg' />
         {/* <img alt='' src='/arc.png' className='size-10' /> */}
       </div>
       {/* Left Image */}

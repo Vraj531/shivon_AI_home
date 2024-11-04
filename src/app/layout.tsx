@@ -15,11 +15,15 @@ import { Footer } from '@/components/Footer';
 //   weight: '100 900',
 // });
 
+// export const viewport: Viewport = {
+//   themeColor: 'white',
+// };
+
 export const metadata: Metadata = {
   title: 'Shivon AI',
   description:
     'Shivon AI is an innovative AI-powered recruitment platform designed to revolutionize the hiring process. Our advanced algorithms analyze vast amounts of data to identify top talent, saving recruiters time and effort. With Shivon AI, you can streamline your hiring process, make data-driven decisions, and find the perfect candidates for your team.',
-  manifest: '/manifest.json',
+  manifest: '/site.webmanifest',
   openGraph: {
     locale: 'en_US',
     type: 'website',
@@ -38,6 +42,25 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+
+  icons: {
+    icon: [
+      {
+        url: '/favicon-96x96.png',
+        sizes: '96x96',
+        rel: 'icon',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
+        rel: 'icon',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 };
 

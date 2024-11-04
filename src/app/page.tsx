@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className='bg-gradient-to-r from-[#bddbd170] to-neutral-50 relative md:pb-24 flex flex-col gap-8'>
+      <div className='bg-gradient-to-r from-[#bddbd170] to-neutral-50 relative md:pb-24 flex flex-col gap-8 z-40'>
         <section className='grid lg:grid-cols-2 grid-cols-1 items-center lg:px-12 px-8 md:py-20 md:pb-40 gap-4 md:gap-0'>
           <img src='/chat1.png' alt='random' className='object-fill ' />
           <div className='max-w-md md:mx-auto'>
@@ -209,9 +209,9 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <img src='/chat.png' alt='random' />
+          <img src='/chat.png' alt='chat' />
         </section>
-        <section className='w-full lg:absolute lg:-bottom-24 place-self-end self-end'>
+        <section className='w-full lg:absolute lg:-bottom-24 place-self-end self-end z-50'>
           <div className='flex lg:w-[80%] items-center mx-auto justify-around bg-[#f6f5fa] rounded-xl '>
             <div className='py-4 md:py-0 px-4'>
               <p className='text-xl lg:text-4xl font-bold'>Ready To Revolutionize</p>
@@ -249,8 +249,9 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className='md:h-80 flex w-full'>
-        <section className='mt-auto flex flex-col justify-center w-full content-center place-content-center mx-auto py-10 gap-8 relative'>
+      <section className='md:h-80 flex w-full relative'>
+        <div className='absolute bg-[#f0451112] left-1/2 rounded-full -translate-x-1/2 -translate-y-1/2 size-[500px] filter blur-lg' />
+        <div className='mt-auto flex flex-col justify-center w-full content-center place-content-center mx-auto py-10 gap-8 relative'>
           {/* <p className='text-5xl font-bold text-center'>SHIVON AI</p> */}
           <Image
             src='/logo.png'
@@ -265,8 +266,8 @@ export default function Home() {
             <img src='/icons8-linkedin.svg' alt='facebook' className='max-w-6' />
             <img src='/icons8-twitterx.svg' alt='facebook' className='max-w-6' />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div className='divider py-0 my-0 lg:max-w-screen-lg mx-auto'></div>
     </div>
   );
