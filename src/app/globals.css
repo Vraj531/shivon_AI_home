@@ -13,11 +13,11 @@ body {
 }
 
 .circle-right {
-  animation: moveRight 2.5s linear infinite,
+  animation: moveRight 2.5s linear infinite;
 }
 
 @keyframes moveRight {
-  0% {
+  from {
     transform: translateX(0);
     opacity: 1;
   }
@@ -26,18 +26,18 @@ body {
     opacity: 1;
   }
 
-  100% {
+  to {
     transform: translateX(30px);
     opacity: 0;
   }
 }
 
 .circle-rightl {
-  animation: moveRightL 2.5s linear infinite,
+  animation: moveRightL 2.5s linear infinite;
 }
 
 @keyframes moveRightL {
-  0% {
+  from {
     transform: translateX(0);
     opacity: 1;
   }
@@ -46,7 +46,7 @@ body {
     opacity: 1;
   }
 
-  100% {
+  to {
     transform: translateX(60px);
     opacity: 0;
   }

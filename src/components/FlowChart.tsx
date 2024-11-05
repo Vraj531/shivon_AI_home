@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const FlowChart = () => {
   return (
     <div className='flex justify-center font-medium items-start relative md:scale-75 lg:scale-100 scale-[38%]  md:py-16'>
@@ -105,7 +103,8 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
         {direction === 'left' && (
           <>
             <div className='w-20 h-0.5 bg-orange-500'></div>
-            {/* <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div> */}
+            {/* ball animation */}
+            <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div>
           </>
         )}
         {direction === 'left' && (
@@ -136,7 +135,8 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
       {direction === 'left' && (
         <>
           <div className='w-20 h-0.5 bg-orange-500'></div>
-          {/* <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div> */}
+          {/* ball animation */}
+          <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div>
         </>
       )}
       {direction === 'left' && (
@@ -157,7 +157,8 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
       {direction === 'right' && (
         <>
           <div className='w-10 h-0.5 bg-orange-500'></div>
-          {/* <div className='absolute size-2 rounded-full right-8 bg-orange-500 circle-right'></div> */}
+          {/* ball animation */}
+          <div className='absolute size-2 rounded-full right-8 bg-orange-500 circle-right'></div>
         </>
       )}
     </div>
