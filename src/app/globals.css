@@ -14,7 +14,6 @@ body {
 
 .circle-right {
   animation: moveRight 2.5s linear infinite,
-    /* fadeInOut 2.5s steps(1, end) infinite; */
 }
 
 @keyframes moveRight {
@@ -24,7 +23,6 @@ body {
   }
 
   80% {
-    /* transform: translateX(10px); */
     opacity: 1;
   }
 
@@ -34,9 +32,8 @@ body {
   }
 }
 
-.circle-rightl {
+/* .circle-rightl {
   animation: moveRightL 2.5s linear infinite,
-    /* fadeInOut 2.5s steps(1, end) infinite; */
 }
 
 @keyframes moveRightL {
@@ -44,17 +41,14 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-
   80% {
-    /* transform: translateX(10px); */
     opacity: 1;
   }
-
   100% {
     transform: translateX(60px);
     opacity: 0;
   }
-}
+} */
 
 .candidate-screening {
   background: linear-gradient(180deg,
