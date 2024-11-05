@@ -63,8 +63,9 @@ export const FlowChart = () => {
             History
           </div>
         </div>
+        {/* animated circle over the line */}
+        {/* <div className='absolute size-2 rounded-full top-[8.7rem] -left-20 transform -translate-y-1/2 -translate-x-full bg-orange-500 circle-rightl'></div> */}
         {/* Horizontal Lines Connecting CMS to Left and Right */}
-        <div className='absolute size-2 rounded-full top-[8.7rem] -left-20 transform -translate-y-1/2 -translate-x-full bg-orange-500 circle-rightl'></div>
         <div className='absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full w-28 h-0.5 bg-orange-500 '></div>
         <div className='absolute top-[47.2%] -left-[10px]'>
           <svg
@@ -104,7 +105,7 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
         {direction === 'left' && (
           <>
             <div className='w-20 h-0.5 bg-orange-500'></div>
-            <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div>
+            {/* <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div> */}
           </>
         )}
         {direction === 'left' && (
@@ -125,7 +126,7 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
       <NodeBox label={label} />
       {direction === 'right' && (
         <>
-          <div className='absolute size-2 rounded-full  bg-orange-500 circle-rightl'></div>
+          {/* <div className='absolute size-2 rounded-full  bg-orange-500 circle-rightl'></div> */}
           <div className='w-10 h-0.5 bg-orange-500'></div>
         </>
       )}
@@ -135,7 +136,7 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
       {direction === 'left' && (
         <>
           <div className='w-20 h-0.5 bg-orange-500'></div>
-          <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div>
+          {/* <div className='absolute size-2 rounded-full left-0 bg-orange-500 circle-rightl'></div> */}
         </>
       )}
       {direction === 'left' && (
@@ -156,7 +157,7 @@ const Node = ({ label, direction = 'right' }: { label: string; direction: string
       {direction === 'right' && (
         <>
           <div className='w-10 h-0.5 bg-orange-500'></div>
-          <div className='absolute size-2 rounded-full right-8 bg-orange-500 circle-right'></div>
+          {/* <div className='absolute size-2 rounded-full right-8 bg-orange-500 circle-right'></div> */}
         </>
       )}
     </div>
