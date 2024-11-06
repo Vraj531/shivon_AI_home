@@ -218,7 +218,7 @@ export default function Home() {
               <p className='text-xl lg:text-4xl font-bold'>Your Recruitment Process?</p>
               <Link
                 className='flex gap-2 pt-8 font-bold text-orange-600 '
-                href="href='https://forms.gle/MLhtvcPYF2xcjkff9'"
+                href='https://forms.gle/MLhtvcPYF2xcjkff9'
               >
                 Get started
                 <span>
